@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to DOM
+    </title>
+    <style>
+        .alert{
+        color: dodgerblue;
+        background-color: rgb(239, 242, 242);
+        padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="Heading">Welcome</h1>
+    <p>Hello</p>
+    <p>How are you?</p>
+    <script>
+        let div =document.createElement('div');
+        div.id="Mydiv1";
+        div.className="alert";
+        div.innerHTML="<p>Congrats you have created a div. </p>";
+        document.body.append(div);
+        
+        let heading=document.getElementById("Heading");
+        heading.innerHTML= '&#128512;'
+
+        document.querySelector('p').innerHTML="<b>Good Job</b>"
+  </script>
+</body>
+</html>
